@@ -15,6 +15,13 @@ from .models import Category, Product
 #         ).order_by('-created')[:5]
 
 
+def contacts(request):
+    return render(request, 'shop/contact.html')
+
+
+def about(request):
+    return render(request, 'shop/about.html')
+
 
 def product_list(request, category_slug=None):
     category = None
